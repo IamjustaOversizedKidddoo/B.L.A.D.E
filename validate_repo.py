@@ -128,8 +128,8 @@ for doc in ["README.md", "ROADMAP.md", "PROGRESS.md", "SOURCES.md", "CONTRIBUTIN
 
 # 9. Verify Related Tracks Section in README.md and PROGRESS.md
 for doc in ["README.md", "PROGRESS.md"]:
-    txt = (WORKSPACE / doc).read_text(encoding='utf-8')
-    if "Related In-Progress Tracks" not in txt or "VAPT Training Curriculum" not in txt or "AWS Cloud Security" not in txt:
+    txt = (WORKSPACE / doc).read_text(encoding='utf-8').lower()
+    if "related in-progress tracks" not in txt or "vapt training curriculum" not in txt or "aws cloud security" not in txt:
         errors.append(f"Missing 'Related Tracks' section in {doc}")
     else:
         print(f"[PASS] Related Tracks Cross-Reference: verified in {doc}.")

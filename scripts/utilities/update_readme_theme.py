@@ -1,4 +1,17 @@
-<p align="center">
+import sys
+import re
+
+# Ensure UTF-8 output
+sys.stdout.reconfigure(encoding='utf-8')
+
+with open('assets/ascii_refined.txt', 'r', encoding='utf-8') as f:
+    oni_lines = [l.rstrip() for l in f.readlines()]
+
+# Pad or frame the ascii art cleanly
+max_w = max(len(l) for l in oni_lines)
+centered_oni = "\n".join([f"  {l}" for l in oni_lines])
+
+readme_template = f"""<p align="center">
   <img src="https://img.shields.io/badge/ctOS-SYSTEM_COMPROMISED-red?style=for-the-badge&logo=target" alt="ctOS" />
   <img src="https://img.shields.io/badge/DEDSEC-RECON_ACTIVE-black?style=for-the-badge&logo=hackthebox" alt="DedSec" />
   <img src="https://img.shields.io/badge/OPERATOR-PURPLE_TEAM-8A2BE2?style=for-the-badge" alt="Purple Team" />
@@ -16,43 +29,7 @@
 │   ░╚═════╝░╚══════╝╚═╝░░╚═╝╚═════╝░╚══════╝                                               │
 │   CYBERSECURITY MASTER LEARNING JOURNAL // 40 WEEKS • 200 DAYS • 9 DELIVERABLES           │
 │                                                                                           │
-                                                 .*.
-                                              .++$$.
-                                           :=$$$$*:             +
-                                         :*$$$+:       *:      :$+
-                              =         +$$$= +       +$=    :*$$.
-      ::                   +**+     .  .$$$$ .$:    .=$$:   *$*+
-      +$                  :*+=    .*+  +$$$$*$$  . .$$*:   .$:
-      $$                  $*      :$+  *$$$$$$=.*$..*.      .
-      *$.                 $$+  :+.=$$:=$$$$$$$$$$*  .+: *            +
-       +*          +      $$*  +$$$$$$$$$$$$$*+$$. =$: **+.        :$*
-        ..         +=+    :$*.+$$$$$$$$$$$$$=+++  *$$ *=.$+   .:  +$+
-           :+:       :  :.+$***$$$$$$$$$$$$$*$:.+$$$$:::*$$  :$+  +.
-            +$$+.       :+$$$*$$$$$$$$$$$$$$$$$$$$$$= +$$$=  *$+
-  .    .+.:+  *$$+   +:+$+$$$$$$$$$*+*$*++:$$$$$$$$+  $$*=:  $$$
-  ==.   :$+*$+ $$*   +$$$+$$$$$$$*+*=++=$++$$$$=+$$=.**.:*+  +$*
-   +*+   $$$$$+.**   .$$$**$*+$*$*$$**$$$+$$$$*++$$$$$+:*$=  *$:
-     +   .=$*.*+:*:@@:+$$$$$$++$$$$$$$$*+$$$$$$$$$$*=$*$$$$ :*:
-         :  :%@#@@@@@@:$$$$$$$$$$$$$$$*:*$$$$$$$$$$$*$**$$*
-         *+ %%.  .:::::$*$$$$$$$$$$$$$*+$$$$$$=:  +$$$+$*+
-        :$*+:::: %@%:: =+$$$$$$$$*$*$$$$$$$$*:    .$$=$*=*
-      ++*$$$::##:##++::  ***$$*$$+=*$$$$$$$*.     +$$$$+$*
-      :*$$$$: :%.%#::%@::.*****$$$*++++=++:@:    :$$$$*=$+
-       $$$$:.::% :###@%::.+*$$$$$$$$$*+:       .+$$*$$$**
-       :*$* :@@#%:%#%#:%: ::+:*$$$$**$$*==++++=*$$$$$$$+:
-    .+:  .+..:%@@@@@@%%%:%@:+++*$$$$++*$*==*$$$$**=*$$+%@#:
-      :+:   :+  ....   :#@@#:++$$$$$$$=+*$$*++++++=**#::%@@#:
-       +*    .      :%#@@#@@@.*$$$$*::$$ :=$$$$$$$@::%@@::##@:
-                   #@@@@%#@@:+*$$$$ .=**====***$$+%@@%::###@#@:
-                   :###::##@@::+*=+ +=**+=::=$***  .%@@%::#@@:
-                  .:@@@%:#%%#%..$$*$$*+ :@@@@:**:     :%@@@@%
-               ::#@@@@#:.        ...    ::@@@@%=+
-         .::%@@@@@@#:: #@::: .::::.  . :@  :#@@@@#:::...
-          :::::..  +$+ :#%=*$$$$$$$$$*:#@: +***:%#@@@#::
-                    +$$****=+++:.+++=$$$$$$$$$=
-                      :+*$$+*$$$$$$$**$$$*++:.
-                         +*$$$$$$$$$$$*+:
-                           :=$$$*$$$*+.
+{centered_oni}
 │                                                                                           │
 │ [!] THREAT CLASSIFICATION: PURPLE TEAM / ADVANCED PRACTITIONER                            │
 │ [>] "CONTROL IS AN ILLUSION. WE ARE EVERYWHERE. DO WHAT YOU WILL." — DEDSEC               │
@@ -117,7 +94,7 @@ Current Day:      Day 001 — TCP/IP Architecture, OSI Model & The 3-Way Handsha
 
 ---
 
-## 🔗 [ 0x03 ] Related In-Progress Tracks & Satellite Operations (VAPT & Cloud-Sec)
+## 🔗 [ 0x03 ] LINKED SATELLITE TRACKS (VAPT & CLOUD-SEC)
 
 > **Master Plan Umbrella:** This **CYBERSECURITY MASTER LEARNING JOURNAL** (40 Weeks / 200 Days) serves as the **overarching umbrella curriculum** across Red Teaming, Blue Teaming, Vulnerability Research, and Tool Engineering.
 
@@ -211,3 +188,9 @@ start dashboard/index.html
   <a href="SOURCES.md">📚 SOURCE REPOSITORIES</a> • 
   <a href="CONTRIBUTING.md">🤝 CONTRIBUTING PROTOCOL</a>
 </p>
+"""
+
+with open('README.md', 'w', encoding='utf-8') as f:
+    f.write(readme_template)
+
+print("README.md written successfully with Watch Dogs / Cyber Oni theme!")
