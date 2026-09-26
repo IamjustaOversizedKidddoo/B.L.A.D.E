@@ -1,4 +1,5 @@
-<h1 align="center">$$\Huge\color{#FF003C}\textbf{B . L . A . D . E  (Blue and Red team Adversarial for Defence and Exploitation)}$$</h1>
+<h1 align="center">$$\Huge\color{#FF003C}\textbf{B . L . A . D . E }$$</h1>
+<h1 align="center">$$\Huge\color{#FF003C}\textbf{Blue and Red team Adversarial for Defence and Exploitation}$$</h1>
 <h3 align="center"><span style="color:#FF003C">⚔️ CYBERSECURITY MASTER LEARNING JOURNAL ⚔️</span></h3>
 
 <p align="center">
