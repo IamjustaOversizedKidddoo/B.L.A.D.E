@@ -1,0 +1,171 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{geometry}
+
+% Page Margins
+\geometry{left=0.55in, top=0.5in, right=0.55in, bottom=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% URL Color Configuration
+\hypersetup{
+    colorlinks=true,
+    linkcolor=MidnightBlue,
+    filecolor=magenta,      
+    urlcolor=MidnightBlue,
+}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------------------------------------------
+% RESUME STARTS HERE
+%-------------------------------------------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \textbf{Ayan Abbas}} \\ \vspace{2pt}
+    {\large \textbf{Cybersecurity Engineer \textbar\ Purple Team Specialist \textbar\ Security Tool Developer}} \\ \vspace{4pt}
+    \small 
+    \href{mailto:ayan.abbas@example.com}{\underline{ayan.abbas@example.com}} \textbar\ 
+    +91-XXXXXXXXXX \textbar\ 
+    \href{https://github.com/IamjustaOversizedKidddoo}{\underline{github.com/IamjustaOversizedKidddoo}} \textbar\ 
+    \href{https://linkedin.com/in/ayan-abbas}{\underline{linkedin.com/in/ayan-abbas}} \textbar\ 
+    New Delhi, India
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\small{
+Hands-on \textbf{Cybersecurity Practitioner and Systems Developer} with deep, auditable expertise spanning offensive operations (Red Team), detection engineering (Blue/SOC), and low-level security programming in \textbf{Rust and Python}. Creator of autonomous AI offensive platforms (\textbf{REVENANT}, \textbf{WRAITH}) and author of the 200-day \textbf{B.L.A.D.E} Purple Team research platform. Demonstrates proven ability to execute full cyber kill-chain operations (Active Directory attack paths, modern web/API penetration testing, C2 operations) while authoring production-grade telemetry decoders, custom Sigma rules, and memory forensics pipelines.
+}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Offensive Security \& Red Team:} Web \& API Penetration Testing (OWASP Top 10, BOLA/IDOR, SQLi, SSRF, SSTI, JWT, GraphQL), Active Directory Exploitation (Kerberoasting, AS-REP Roasting, BloodHound, Mimikatz, Pass-the-Hash, Golden/Silver Tickets), C2 Infrastructure (Sliver C2, Ligolo-ng, Chisel, mTLS Listeners), Defense Evasion (AMSI/ETW Bypasses, Staged Payloads, LOLBAS). \\ \vspace{1pt}
+     \textbf{Defensive Security \& SOC:} SIEM \& Detection Engineering (Wazuh, Elastic, Sigma Rule Authoring, Atomic Red Team Validation), Host Telemetry \& Logging (Sysmon, Windows Event Logs, Linux \texttt{auditd}, Zeek, Suricata), Incident Response \& DFIR (SANS PICERL, Volatility 3 Memory Forensics, Prefetch/MFT Analysis, PCAP Stream Reconstruction). \\ \vspace{1pt}
+     \textbf{Systems Programming \& Tooling:} Rust (Tokio Async, Memory Safety, FFI, Raw Sockets via \texttt{pnet}, Win32 API), Python (Scapy, Requests, Socket Programming, CVE Ingestion Pipelines), Bash, PowerShell, C/C++. \\ \vspace{1pt}
+     \textbf{Cloud, Infrastructure \& Environments:} AWS Security (IAM Least Privilege, KMS, GuardDuty, CloudTrail, VPC Peering -- SCS-C03 Track), Linux Internals (FHS, SUID, systemd, \texttt{/proc}), Windows Internals (PE Format, Access Tokens, ACLs, Registry), Docker, Git OPSEC.
+    }}
+\end{itemize}
+
+%-----------CORE PROJECTS-----------
+\section{Core Security Engineering Projects}
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading
+        {\textbf{REVENANT v2.0} \textbar\ \emph{Autonomous Multi-Agent AI Red Teaming Platform} \textbar\ \href{https://github.com/IamjustaOversizedKidddoo/REVENANT}{\underline{GitHub}}}{Python, AsyncIO, OpenAPI 3.1, MITRE ATT\&CK}
+        \resumeItemListStart
+            \resumeItem{Architected an autonomous offensive security platform utilizing a stigmergic blackboard architecture to coordinate multi-agent offensive campaigns across enterprise networks and cloud estates.}
+            \resumeItem{Engineered specialized modular agents for automated target reconnaissance, API vulnerability fuzzing, cloud/Kubernetes posture assessment, and Active Directory attack-path execution.}
+            \resumeItem{Implemented an automated correlation engine mapping discovered telemetry and exploits directly to MITRE ATT\&CK TTPs, outputting structured executive summaries and verifiable remediation steps.}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{WRAITH} \textbar\ \emph{Autonomous AI-Powered CTF \& Bug Bounty Hunting Engine}}{Python, Scapy, LLM Agents, Burp Suite, Nuclei}
+        \resumeItemListStart
+            \resumeItem{Developed an autonomous security assessment engine capable of context-aware target profiling, endpoint discovery, and multi-step exploit generation against web and network targets.}
+            \resumeItem{Integrated LLM reasoning workflows with active security toolchains (ffuf, Nuclei, Nmap, Burp Suite API) to synthesize valid Proof-of-Concepts (PoCs) for complex business logic flaws and race conditions.}
+            \resumeItem{Built an automated CTF challenge solver that analyzes protocol handshakes, parses binary strings, and executes token attacks in controlled lab ranges.}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{B.L.A.D.E // Cybersecurity Master Journal} \textbar\ \emph{200-Day Purple Team Platform} \textbar\ \href{https://github.com/IamjustaOversizedKidddoo/B.L.A.D.E}{\underline{GitHub}}}{Rust, Python, Wazuh SIEM, Sliver C2}
+        \resumeItemListStart
+            \resumeItem{Engineered an auditable 40-week / 200-day security research repository covering 9 milestone deliverables across foundations, offensive operations, SOC detection engineering, and Rust systems programming.}
+            \resumeItem{Developed a \textbf{Personal Security Toolkit in Rust} featuring an ultra-fast async port scanner using Tokio, an asynchronous HTTP subdomain prober, and a line-speed log parser with Serde.}
+            \resumeItem{Automated master repository progress recalculations via custom Python AST/frontmatter parsers integrated into GitHub Actions CI/CD workflows.}
+        \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE / SECURITY LABS-----------
+\section{Practical Security Engagements \& Laboratory Deployments}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Corporate Active Directory Cyber Range \& Adversary Emulation}{Phase 3 \& Phase 5 Milestone}
+        {Lead Operator / Lab Architect}{Controlled Virtual Lab}
+        \resumeItemListStart
+            \resumeItem{Provisioned and interconnected a multi-forest AD environment containing Windows Server Domain Controllers, Windows workstations, and Linux target servers on an isolated host-only network.}
+            \resumeItem{Executed complete attack chains: BloodHound graph enumeration, Kerberoasting SPNs, AS-REP Roasting, Pass-the-Hash (PtH), token impersonation via \texttt{SeImpersonatePrivilege}, and Golden Ticket persistence.}
+            \resumeItem{Established hardened defensive baselines: configured Sysmon XML schemas, tuned Group Policy Objects (GPO), and deployed Kerberos AES-only encryption policies.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+        {SOC \& Detection Engineering Operations Center}{Phase 6 Milestone}
+        {Security Analyst / Detection Engineer}{Controlled Virtual Lab}
+        \resumeItemListStart
+            \resumeItem{Deployed a centralized \textbf{Wazuh SIEM} and Elastic cluster; configured automated log ingestion across Linux (\texttt{auditd}) and Windows endpoints (\texttt{Sysmon} channel logs).}
+            \resumeItem{Authored and validated \textbf{15+ custom Sigma detection rules} covering credential dumping (LSASS access via mimikatz), lateral movement (PsExec/WMI), and LOLBAS execution.}
+            \resumeItem{Conducted proactive threat hunting hypotheses using MITRE ATT\&CK matrices and validated detection coverage using Atomic Red Team automation.}
+        \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION & CERTIFICATIONS-----------
+\section{Education \& Professional Certifications}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {Bachelor of Technology (B.Tech) in Computer Science / Cybersecurity}{Expected 2026}
+        {University / Institute Name}{GPA: X.X / 10.0}
+\resumeSubHeadingListEnd
+
+\vspace{-4pt}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Certifications \& Standard Alignment:} \\
+     \textbullet\ \textbf{AWS Certified Security -- Specialty (SCS-C03)} (In Progress -- 90-Day Cloud Security Track) \\
+     \textbullet\ \textbf{Junior Penetration Tester / VAPT Curriculum} (Aligned with eJPT / OSCP offensive methodology) \\
+     \textbullet\ \textbf{SANS / NIST Incident Response Framework} (SANS PICERL \& NIST SP 800-61 Standards)
+    }}
+\end{itemize}
+
+\end{document}
