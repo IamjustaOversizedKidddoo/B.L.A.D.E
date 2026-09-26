@@ -1,4 +1,9 @@
-<h1 align="center">⚔️ B.L.A.D.E // CYBERSECURITY MASTER JOURNAL</h1>
+import sys
+
+# Ensure UTF-8 output
+sys.stdout.reconfigure(encoding='utf-8')
+
+readme_content = """<h1 align="center">⚔️ B.L.A.D.E // CYBERSECURITY MASTER JOURNAL</h1>
 
 <p align="center">
   <img src="assets/logo.png" alt="Cyber Oni DedSec Logo" height="300">
@@ -178,3 +183,9 @@ start dashboard/index.html
   <a href="SOURCES.md">📚 SOURCE REPOSITORIES</a> • 
   <a href="CONTRIBUTING.md">🤝 CONTRIBUTING PROTOCOL</a>
 </p>
+"""
+
+with open('README.md', 'w', encoding='utf-8') as f:
+    f.write(readme_content)
+
+print("Updated README.md with centered RedTeam-Tools style logo graphic!")
