@@ -1,0 +1,27 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python virtual environment & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Large Capture & Binary Files (store summaries or link externally)
+*.iso
+*.vmdk
+*.vdi
+*.qcow2
+*.dmp
+*.raw
+
+# Build artifacts & temp
+/dist/
+/build/
+target/
+*.log
+.temp/

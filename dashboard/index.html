@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CYBERSECURITY MASTER JOURNAL — Local Operations Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <span class="shield-icon">🛡️</span>
+        <div class="logo-text">
+          <h2>CYBER-JOURNAL</h2>
+          <span class="sub">Purple Team Operations</span>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#overview" class="active">📊 Overview</a>
+        <a href="#phases">🗺️ Phases & Weeks</a>
+        <a href="#projects">📌 Projects</a>
+        <a href="#cheatsheets">📑 Cheatsheets</a>
+        <a href="#terminal">💻 CLI Guide</a>
+      </nav>
+
+      <div class="sidebar-status">
+        <span class="status-dot"></span>
+        <span>Local Journal Engine: Active</span>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="content">
+      <!-- Header Bar -->
+      <header class="topbar">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="daySearch" placeholder="Search Day (e.g. 'Day 015', 'Kerberos', 'XSS')...">
+        </div>
+        <div class="user-pill">
+          <span class="badge">Master Curriculum</span>
+          <span class="days-badge">200 Days • 40 Weeks</span>
+        </div>
+      </header>
+
+      <!-- Dashboard Cards -->
+      <section id="overview" class="stats-grid">
+        <div class="card stat-card">
+          <div class="card-header">Overall Progress</div>
+          <div class="stat-value" id="overallPercent">0.0%</div>
+          <div class="progress-bar-container">
+            <div class="progress-fill" id="overallFill" style="width: 0%"></div>
+          </div>
+          <div class="stat-footer">0 / 200 Days Completed</div>
+        </div>
+
+        <div class="card stat-card">
+          <div class="card-header">Current Focus</div>
+          <div class="stat-value highlight">Phase 01</div>
+          <div class="stat-sub">Core Foundations</div>
+          <div class="stat-footer">Week 01 • Networking & Protocols</div>
+        </div>
+
+        <div class="card stat-card">
+          <div class="card-header">Next Milestone</div>
+          <div class="stat-value">Deliverable 1</div>
+          <div class="stat-sub">Multi-OS Security Lab</div>
+          <div class="stat-footer">Target: Day 030</div>
+        </div>
+
+        <div class="card stat-card">
+          <div class="card-header">Curriculum Scope</div>
+          <div class="stat-value">9 Phases</div>
+          <div class="stat-sub">40 Weeks</div>
+          <div class="stat-footer">Full ATT&CK / Kill Chain</div>
+        </div>
+      </section>
+
+      <!-- Phases Section -->
+      <section id="phases" class="section">
+        <div class="section-header">
+          <h2>Curriculum Phase Navigation</h2>
+          <span class="hint">Click any phase to expand its weeks and days</span>
+        </div>
+
+        <div class="phases-container" id="phasesContainer">
+          <!-- Populated by app.js -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

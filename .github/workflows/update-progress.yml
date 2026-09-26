@@ -1,0 +1,45 @@
+name: Update Progress Tracker
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'days/**'
+      - 'curriculum.json'
+      - 'scripts/progress/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-progress:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Progress Update Script
+        run: python scripts/progress/update.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md PROGRESS.md phase-*/
+          if git diff --staged --quiet; then
+            echo "No progress updates to commit."
+          else
+            git commit -m "docs(progress): update progress bars and dashboard [skip ci]"
+            git push
+          fi
