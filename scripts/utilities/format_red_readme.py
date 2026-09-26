@@ -1,4 +1,43 @@
-<h1 align="center">$$\Huge\color{#FF003C}\textbf{B . L . A . D . E}$$</h1>
+import sys
+import os
+
+# Ensure UTF-8 output
+sys.stdout.reconfigure(encoding='utf-8')
+
+with open('assets/ascii_refined.txt', 'r', encoding='utf-8') as f:
+    oni_lines = [l.rstrip() for l in f.readlines()]
+
+blade_ascii = [
+'░██████╗░██╗░░░░░░█████╗░██████╗░███████╗',
+'░██╔══██╗██║░░░░░██╔══██╗██╔══██╗██╔════╝',
+'░██████╦╝██║░░░░░███████║██║░░██║█████╗░░',
+'░██╔══██╗██║░░░░░██╔══██║██║░░██║██╔══╝░░',
+'░██████╦╝███████╗██║░░██║██████╔╝███████╗',
+'░╚═════╝░╚══════╝╚═╝░░╚═╝╚═════╝░╚══════╝'
+]
+
+# Build RED diff block where every line starts with '-'
+diff_lines = []
+diff_lines.append("```diff")
+diff_lines.append("- ┌──[ ctOS // KERNEL COMPROMISED ]─────────────────────────────[ NODE: BLADE.DEDSEC.LOCAL ]──┐")
+diff_lines.append("- │                                                                                           │")
+for bl in blade_ascii:
+    diff_lines.append(f"- │   {bl:<72} │")
+diff_lines.append("- │   CYBERSECURITY MASTER LEARNING JOURNAL // 40 WEEKS • 200 DAYS • 9 DELIVERABLES           │")
+diff_lines.append("- │                                                                                           │")
+for ol in oni_lines:
+    diff_lines.append(f"- │      {ol:<76} │")
+diff_lines.append("- │                                                                                           │")
+diff_lines.append("- │   SYSTEM STATUS: LEVEL 0 ROOT SHELL // AMSI & ETW EVADED // C2 MULTI-HOP ONION ACTIVE     │")
+diff_lines.append("- │   PIPELINE: RECON ➔ WEAPONIZATION ➔ INITIAL ACCESS ➔ PRIVESC ➔ TELEMETRY ➔ DETECTION      │")
+diff_lines.append("- │   DIRECTIVE: 40 WEEKS • 200 ADVANCED PRACTITIONER DAYS • 9 ENTERPRISE DELIVERABLES        │")
+diff_lines.append("- │   [>] \"CONTROL IS AN ILLUSION. WE ARE EVERYWHERE. DO WHAT YOU WILL.\" — DEDSEC             │")
+diff_lines.append("- └───────────────────────────────────────────────────────────────────────────────────────────┘")
+diff_lines.append("```")
+
+red_terminal_block = "\n".join(diff_lines)
+
+readme_template = f"""<h1 align="center">$$\Huge\color{{#FF003C}}\textbf{{B . L . A . D . E}}$$</h1>
 <h3 align="center"><span style="color:#FF003C">⚔️ CYBERSECURITY MASTER LEARNING JOURNAL ⚔️</span></h3>
 
 <p align="center">
@@ -22,61 +61,7 @@
 
 ## ⚡ [ 0x01 ] DEDSEC OPERATIONAL DIRECTIVE & TERMINAL HUD
 
-```diff
-- ┌──[ ctOS // KERNEL COMPROMISED ]─────────────────────────────[ NODE: BLADE.DEDSEC.LOCAL ]──┐
-- │                                                                                           │
-- │   ░██████╗░██╗░░░░░░█████╗░██████╗░███████╗                                │
-- │   ░██╔══██╗██║░░░░░██╔══██╗██╔══██╗██╔════╝                                │
-- │   ░██████╦╝██║░░░░░███████║██║░░██║█████╗░░                                │
-- │   ░██╔══██╗██║░░░░░██╔══██║██║░░██║██╔══╝░░                                │
-- │   ░██████╦╝███████╗██║░░██║██████╔╝███████╗                                │
-- │   ░╚═════╝░╚══════╝╚═╝░░╚═╝╚═════╝░╚══════╝                                │
-- │   CYBERSECURITY MASTER LEARNING JOURNAL // 40 WEEKS • 200 DAYS • 9 DELIVERABLES           │
-- │                                                                                           │
-- │                                                     .*.                           │
-- │                                                  .++$$.                           │
-- │                                               :=$$$$*:             +              │
-- │                                             :*$$$+:       *:      :$+             │
-- │                                  =         +$$$= +       +$=    :*$$.             │
-- │          ::                   +**+     .  .$$$$ .$:    .=$$:   *$*+               │
-- │          +$                  :*+=    .*+  +$$$$*$$  . .$$*:   .$:                 │
-- │          $$                  $*      :$+  *$$$$$$=.*$..*.      .                  │
-- │          *$.                 $$+  :+.=$$:=$$$$$$$$$$*  .+: *            +         │
-- │           +*          +      $$*  +$$$$$$$$$$$$$*+$$. =$: **+.        :$*         │
-- │            ..         +=+    :$*.+$$$$$$$$$$$$$=+++  *$$ *=.$+   .:  +$+          │
-- │               :+:       :  :.+$***$$$$$$$$$$$$$*$:.+$$$$:::*$$  :$+  +.           │
-- │                +$$+.       :+$$$*$$$$$$$$$$$$$$$$$$$$$$= +$$$=  *$+               │
-- │      .    .+.:+  *$$+   +:+$+$$$$$$$$$*+*$*++:$$$$$$$$+  $$*=:  $$$               │
-- │      ==.   :$+*$+ $$*   +$$$+$$$$$$$*+*=++=$++$$$$=+$$=.**.:*+  +$*               │
-- │       +*+   $$$$$+.**   .$$$**$*+$*$*$$**$$$+$$$$*++$$$$$+:*$=  *$:               │
-- │         +   .=$*.*+:*:@@:+$$$$$$++$$$$$$$$*+$$$$$$$$$$*=$*$$$$ :*:                │
-- │             :  :%@#@@@@@@:$$$$$$$$$$$$$$$*:*$$$$$$$$$$$*$**$$*                    │
-- │             *+ %%.  .:::::$*$$$$$$$$$$$$$*+$$$$$$=:  +$$$+$*+                     │
-- │            :$*+:::: %@%:: =+$$$$$$$$*$*$$$$$$$$*:    .$$=$*=*                     │
-- │          ++*$$$::##:##++::  ***$$*$$+=*$$$$$$$*.     +$$$$+$*                     │
-- │          :*$$$$: :%.%#::%@::.*****$$$*++++=++:@:    :$$$$*=$+                     │
-- │           $$$$:.::% :###@%::.+*$$$$$$$$$*+:       .+$$*$$$**                      │
-- │           :*$* :@@#%:%#%#:%: ::+:*$$$$**$$*==++++=*$$$$$$$+:                      │
-- │        .+:  .+..:%@@@@@@%%%:%@:+++*$$$$++*$*==*$$$$**=*$$+%@#:                    │
-- │          :+:   :+  ....   :#@@#:++$$$$$$$=+*$$*++++++=**#::%@@#:                  │
-- │           +*    .      :%#@@#@@@.*$$$$*::$$ :=$$$$$$$@::%@@::##@:                 │
-- │                       #@@@@%#@@:+*$$$$ .=**====***$$+%@@%::###@#@:                │
-- │                       :###::##@@::+*=+ +=**+=::=$***  .%@@%::#@@:                 │
-- │                      .:@@@%:#%%#%..$$*$$*+ :@@@@:**:     :%@@@@%                  │
-- │                   ::#@@@@#:.        ...    ::@@@@%=+                              │
-- │             .::%@@@@@@#:: #@::: .::::.  . :@  :#@@@@#:::...                       │
-- │              :::::..  +$+ :#%=*$$$$$$$$$*:#@: +***:%#@@@#::                       │
-- │                        +$$****=+++:.+++=$$$$$$$$$=                                │
-- │                          :+*$$+*$$$$$$$**$$$*++:.                                 │
-- │                             +*$$$$$$$$$$$*+:                                      │
-- │                               :=$$$*$$$*+.                                        │
-- │                                                                                           │
-- │   SYSTEM STATUS: LEVEL 0 ROOT SHELL // AMSI & ETW EVADED // C2 MULTI-HOP ONION ACTIVE     │
-- │   PIPELINE: RECON ➔ WEAPONIZATION ➔ INITIAL ACCESS ➔ PRIVESC ➔ TELEMETRY ➔ DETECTION      │
-- │   DIRECTIVE: 40 WEEKS • 200 ADVANCED PRACTITIONER DAYS • 9 ENTERPRISE DELIVERABLES        │
-- │   [>] "CONTROL IS AN ILLUSION. WE ARE EVERYWHERE. DO WHAT YOU WILL." — DEDSEC             │
-- └───────────────────────────────────────────────────────────────────────────────────────────┘
-```
+{red_terminal_block}
 
 > **Operator Profile:** Advanced Security Practitioner / Purple Team Engineer  
 > **Curriculum Scope:** 40 Weeks • 200 Days • 9 Industry Deliverables • 12 Operator Cheatsheets  
@@ -219,3 +204,9 @@ start dashboard/index.html
   <a href="SOURCES.md">📚 SOURCE REPOSITORIES</a> • 
   <a href="CONTRIBUTING.md">🤝 CONTRIBUTING PROTOCOL</a>
 </p>
+"""
+
+with open('README.md', 'w', encoding='utf-8') as f:
+    f.write(readme_template)
+
+print("Formatted README.md with RED BLADE text and RED Cyber Oni logo!")
