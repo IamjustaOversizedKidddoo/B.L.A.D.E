@@ -52,60 +52,38 @@
 
 <!-- PROGRESS-DASHBOARD:START -->
 ```text
-╔══════════════════════════════════════════════════════════════╗
-║  OVERALL PROGRESS   [███░░░░░░░░░░░░░░░░░░]   15.0%         ║
-║  Completed Days  :  30 / 200                                 ║
-║  In Progress     :  0                                        ║
-║  Remaining       :  170 Days                                 ║
-╠══════════════════════════════════════════════════════════════╣
-║  Active Phase    :  Phase 2 — Web App Security + Recon       ║
-║  Active Week     :  Week 07 — Passive & Active Recon         ║
-║  Next Day        :  Day 031 — OSINT / Domain / ASN Mapping   ║
-╠══════════════════════════════════════════════════════════════╣
-║  Phase 1 Status  :  ✅ COMPLETE  (30 / 30 days)              ║
-║  Deliverable 1   :  ✅ Security Lab Environment — SHIPPED     ║
-╚══════════════════════════════════════════════════════════════╝
+Overall Progress: [███░░░░░░░░░░░░░░░░░] 15.0%
+Completed Days:   30 / 200
+In Progress:      0
+Needs Review:     0
+Remaining:        170 Days
+Current Phase:    Phase 2 — Web Application Security + Reconnaissance
+Current Week:     Week 07 — Passive & Active Reconnaissance
+Current Day:      Day 031 — Open Source Intelligence (OSINT) — Domain WHOIS, ASN Mapping & IP Scopes
 ```
 <!-- PROGRESS-DASHBOARD:END -->
 
 ### 🏆 Phase Execution Status
 
 <!-- PHASE-PROGRESS:START -->
-* ✅ **[Phase 1: Core Foundations — Networking + Linux + Windows + Web](phase-01-foundations/README.md)**  
-  `[██████████]` **100.0%** (30 / 30 Days) • Weeks 01–06  
-  Deliverable: ✅ [Multi-OS Security Lab Environment — COMPLETE](projects/project-01-security-lab-environment/README.md)
-
-* 🔵 **[Phase 2: Web Application Security + Reconnaissance](phase-02-web-recon/README.md)**  
-  `[░░░░░░░░░░]` 0.0% (0 / 30 Days) • Weeks 07–12  
-  Deliverable: 🔲 [Web Security Lab & Professional Pentest Report](projects/project-02-web-pentest-report/README.md)
-
-* ⚪ **[Phase 3: Privilege Escalation + Internal Security](phase-03-internal-security/README.md)**  
-  `[░░░░░░░░░░]` 0.0% (0 / 30 Days) • Weeks 13–18  
-  Deliverable: 🔲 [Corporate Active Directory Lab](projects/project-03-corporate-ad-lab/README.md)
-
-* ⚪ **[Phase 4: Vulnerability Research + CVE Intelligence](phase-04-cve-research/README.md)**  
-  `[░░░░░░░░░░]` 0.0% (0 / 15 Days) • Weeks 19–21  
-  Deliverable: 🔲 [CVE Research & Intelligence Pipeline](projects/project-04-cve-intelligence-pipeline/README.md)
-
-* ⚪ **[Phase 5: Red Team Operations + Adversary Emulation](phase-05-red-team/README.md)**  
-  `[░░░░░░░░░░]` 0.0% (0 / 30 Days) • Weeks 22–27  
-  Deliverable: 🔲 [Full Red Team Engagement Report](projects/project-05-red-team-engagement-report/README.md)
-
-* ⚪ **[Phase 6: Blue Team + SOC + Threat Hunting](phase-06-blue-team/README.md)**  
-  `[░░░░░░░░░░]` 0.0% (0 / 25 Days) • Weeks 28–32  
-  Deliverable: 🔲 [SOC & Detection Engineering Lab](projects/project-06-soc-detection-lab/README.md)
-
-* ⚪ **[Phase 7: Malware Analysis + Digital Forensics](phase-07-malware-forensics/README.md)**  
-  `[░░░░░░░░░░]` 0.0% (0 / 15 Days) • Weeks 33–35  
-  Deliverable: 🔲 [Malware Triage & Forensics Report](projects/project-07-malware-triage-forensics/README.md)
-
-* ⚪ **[Phase 8: Security Programming + Rust + Tool Development](phase-08-security-programming/README.md)**  
-  `[░░░░░░░░░░]` 0.0% (0 / 15 Days) • Weeks 36–38  
-  Deliverable: 🔲 [Personal Security Toolkit in Rust](projects/project-08-personal-security-toolkit/README.md)
-
-* ⚪ **[Phase 9: Purple Team + Automation + Capstone](phase-09-purple-team/README.md)**  
-  `[░░░░░░░░░░]` 0.0% (0 / 10 Days) • Weeks 39–40  
-  Deliverable: 🔲 [Purple Team Security Operations Platform](projects/project-09-purple-team-platform/README.md)
+* **[Phase 1: Core Foundations — Networking + Linux + Windows + Web](phase-01-foundations/README.md)**  
+  `[██████████]` 100.0% (30 / 30 Days) • Weeks 01–06 • Deliverable: [Multi-OS Security Lab Environment](projects/project-01-security-lab-environment/README.md)
+* **[Phase 2: Web Application Security + Reconnaissance](phase-02-web-recon/README.md)**  
+  `[░░░░░░░░░░]` 0.0% (0 / 30 Days) • Weeks 07–12 • Deliverable: [Web Security Lab & Pentest Report](projects/project-02-web-pentest-report/README.md)
+* **[Phase 3: Privilege Escalation + Internal Security](phase-03-internal-security/README.md)**  
+  `[░░░░░░░░░░]` 0.0% (0 / 30 Days) • Weeks 13–18 • Deliverable: [Corporate Active Directory Lab](projects/project-03-corporate-ad-lab/README.md)
+* **[Phase 4: Vulnerability Research + CVE Intelligence](phase-04-cve-research/README.md)**  
+  `[░░░░░░░░░░]` 0.0% (0 / 15 Days) • Weeks 19–21 • Deliverable: [CVE Research & Intelligence Pipeline](projects/project-04-cve-intelligence-pipeline/README.md)
+* **[Phase 5: Red Team Operations + Adversary Emulation](phase-05-red-team/README.md)**  
+  `[░░░░░░░░░░]` 0.0% (0 / 30 Days) • Weeks 22–27 • Deliverable: [Full Red Team Engagement Report](projects/project-05-red-team-engagement-report/README.md)
+* **[Phase 6: Blue Team + SOC + Threat Hunting](phase-06-blue-team/README.md)**  
+  `[░░░░░░░░░░]` 0.0% (0 / 25 Days) • Weeks 28–32 • Deliverable: [SOC & Detection Engineering Lab](projects/project-06-soc-detection-lab/README.md)
+* **[Phase 7: Malware Analysis + Digital Forensics](phase-07-malware-forensics/README.md)**  
+  `[░░░░░░░░░░]` 0.0% (0 / 15 Days) • Weeks 33–35 • Deliverable: [Malware Triage & Forensics Report](projects/project-07-malware-triage-forensics/README.md)
+* **[Phase 8: Security Programming + Rust + Tool Development](phase-08-security-programming/README.md)**  
+  `[░░░░░░░░░░]` 0.0% (0 / 15 Days) • Weeks 36–38 • Deliverable: [Personal Security Toolkit in Rust](projects/project-08-personal-security-toolkit/README.md)
+* **[Phase 9: Purple Team + Automation + Capstone](phase-09-purple-team/README.md)**  
+  `[░░░░░░░░░░]` 0.0% (0 / 10 Days) • Weeks 39–40 • Deliverable: [Purple Team Security Operations Platform](projects/project-09-purple-team-platform/README.md)
 <!-- PHASE-PROGRESS:END -->
 
 ---
