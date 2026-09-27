@@ -1,7 +1,7 @@
 # 📊 MASTER PROGRESS TRACKER
 
 > **Master Plan:** 40 Weeks • 200 Days • 9 Core Deliverables  
-> **Status:** ⚪ Not Started  
+> **Status:** 🟡 In Progress  
 > **Last Synchronized:** Dynamically calculated by `scripts/progress/update.py`
 
 ---
@@ -10,8 +10,8 @@
 
 ```text
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║ TOTAL DAYS: 200      COMPLETED: 0        IN PROGRESS: 0       NEEDS REVIEW: 0    ║
-║ REMAINING: 200      OVERALL PROGRESS: [░░░░░░░░░░░░░░░░░░░░]   0.0% ║
+║ TOTAL DAYS: 200      COMPLETED: 30       IN PROGRESS: 0       NEEDS REVIEW: 0    ║
+║ REMAINING: 170      OVERALL PROGRESS: [███░░░░░░░░░░░░░░░░░]  15.0% ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 ```
 
@@ -21,7 +21,7 @@
 
 | Phase | Progress Bar | Days Completed | Status |
 | :--- | :--- | :--- | :--- |
-| [Phase 01: Core Foundations — Networking + Linux + Windows + Web](phase-01-foundations/README.md) | `░░░░░░░░░░` 0.0% | 0 / 30 | ⚪ Not Started |
+| [Phase 01: Core Foundations — Networking + Linux + Windows + Web](phase-01-foundations/README.md) | `██████████` 100.0% | 30 / 30 | 🟢 Completed |
 | [Phase 02: Web Application Security + Reconnaissance](phase-02-web-recon/README.md) | `░░░░░░░░░░` 0.0% | 0 / 30 | ⚪ Not Started |
 | [Phase 03: Privilege Escalation + Internal Security](phase-03-internal-security/README.md) | `░░░░░░░░░░` 0.0% | 0 / 30 | ⚪ Not Started |
 | [Phase 04: Vulnerability Research + CVE Intelligence](phase-04-cve-research/README.md) | `░░░░░░░░░░` 0.0% | 0 / 15 | ⚪ Not Started |
@@ -50,36 +50,36 @@ To ensure efficient cross-referencing and eliminate duplicate note-taking, two p
 
 | Status | Day | Day Title | Tier | Week | Phase |
 | :---: | :--- | :--- | :---: | :---: | :---: |
-| ⚪ Not Started | [**Day 001**](days/day-001/README.md) | TCP/IP Architecture, OSI Model & The 3-Way Handshake | `[LIGHT]` | [W01](phase-01-foundations/week-01-networking/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 002**](days/day-002/README.md) | IPv4, IPv6, CIDR Subnetting & Packet Fragmentation | `[LIGHT]` | [W01](phase-01-foundations/week-01-networking/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 003**](days/day-003/README.md) | Core Protocols — ARP, ICMP, DHCP, NAT & Routing Mechanics | `[LIGHT]` | [W01](phase-01-foundations/week-01-networking/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 004**](days/day-004/README.md) | Transport & Application Layers — DNS, HTTP/HTTPS & TLS Cryptography | `[LIGHT]` | [W01](phase-01-foundations/week-01-networking/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 005**](days/day-005/README.md) | Network Traffic Analysis — tcpdump & Wireshark Stream Reconstruction | `[FULL]` | [W01](phase-01-foundations/week-01-networking/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 006**](days/day-006/README.md) | Linux Filesystem Hierarchy (FHS), Users & Standard Permissions | `[LIGHT]` | [W02](phase-01-foundations/week-02-linux/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 007**](days/day-007/README.md) | Special Permissions (SUID, SGID, Sticky Bit) & Process Execution | `[LIGHT]` | [W02](phase-01-foundations/week-02-linux/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 008**](days/day-008/README.md) | Systemd Services, Daemons, Cron Tasks & SSH Key Hardening | `[LIGHT]` | [W02](phase-01-foundations/week-02-linux/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 009**](days/day-009/README.md) | Virtual Filesystems (/proc, /sys), Environment Variables & Bash Automation | `[FULL]` | [W02](phase-01-foundations/week-02-linux/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 010**](days/day-010/README.md) | Linux Logging (/var/log, journalctl), Networking & Host Investigation | `[FULL]` | [W02](phase-01-foundations/week-02-linux/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 011**](days/day-011/README.md) | Windows OS Architecture — User Mode, Kernel Mode & PE Basics | `[LIGHT]` | [W03](phase-01-foundations/week-03-windows/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 012**](days/day-012/README.md) | Windows Security Subsystem — LSASS, SAM, Tokens & ACLs | `[LIGHT]` | [W03](phase-01-foundations/week-03-windows/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 013**](days/day-013/README.md) | Windows Services, Registry Architecture, Scheduled Tasks & UAC | `[LIGHT]` | [W03](phase-01-foundations/week-03-windows/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 014**](days/day-014/README.md) | PowerShell for Security Operations — WMI, CIM & WinRM | `[FULL]` | [W03](phase-01-foundations/week-03-windows/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 015**](days/day-015/README.md) | Windows Auditing — Security Event Logs, Sysmon & Endpoint Visibility | `[FULL]` | [W03](phase-01-foundations/week-03-windows/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 016**](days/day-016/README.md) | HTTP Protocol Deep Dive, Headers, Cookies & Sessions | `[LIGHT]` | [W04](phase-01-foundations/week-04-web-architecture/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 017**](days/day-017/README.md) | Browser Security Model — Same-Origin Policy (SOP), CORS & CSP | `[LIGHT]` | [W04](phase-01-foundations/week-04-web-architecture/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 018**](days/day-018/README.md) | Authentication Architectures — Passwords, Sessions & JSON Web Tokens (JWT) | `[LIGHT]` | [W04](phase-01-foundations/week-04-web-architecture/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 019**](days/day-019/README.md) | Modern Federated Identity — OAuth 2.0 & OpenID Connect (OIDC) | `[FULL]` | [W04](phase-01-foundations/week-04-web-architecture/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 020**](days/day-020/README.md) | Web Infrastructure — Reverse Proxies, CDNs, WebSockets & APIs | `[FULL]` | [W04](phase-01-foundations/week-04-web-architecture/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 021**](days/day-021/README.md) | API Architectures, RESTful Conventions & GraphQL Introspection | `[LIGHT]` | [W05](phase-01-foundations/week-05-web-security/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 022**](days/day-022/README.md) | Cross-Site Scripting (XSS) Core Mechanics — Stored, Reflected & DOM | `[LIGHT]` | [W05](phase-01-foundations/week-05-web-security/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 023**](days/day-023/README.md) | Cross-Site Request Forgery (CSRF) & SameSite Cookie Defenses | `[LIGHT]` | [W05](phase-01-foundations/week-05-web-security/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 024**](days/day-024/README.md) | Server-Side Request Forgery (SSRF) Mechanics & Cloud Metadata | `[FULL]` | [W05](phase-01-foundations/week-05-web-security/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 025**](days/day-025/README.md) | SQL Injection Fundamentals — Error-based, Union-based & Blind | `[FULL]` | [W05](phase-01-foundations/week-05-web-security/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 026**](days/day-026/README.md) | Security Workstation Setup — Kali Linux, Shell Customization & Git OPSEC | `[LIGHT]` | [W06](phase-01-foundations/week-06-tooling/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 027**](days/day-027/README.md) | Network Scanning & Port Enumeration with Nmap | `[FULL]` | [W06](phase-01-foundations/week-06-tooling/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 028**](days/day-028/README.md) | Web Application Interception with Burp Suite | `[FULL]` | [W06](phase-01-foundations/week-06-tooling/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 029**](days/day-029/README.md) | Python for Security Practitioners — Sockets, Requests & Automation | `[FULL]` | [W06](phase-01-foundations/week-06-tooling/README.md) | [P01](phase-01-foundations/README.md) |
-| ⚪ Not Started | [**Day 030**](days/day-030/README.md) | Phase 1 Capstone Deliverable — Security Lab Environment | `[FULL]` | [W06](phase-01-foundations/week-06-tooling/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 001**](days/day-001/README.md) | TCP/IP Architecture, OSI Model & The 3-Way Handshake | `[LIGHT]` | [W01](phase-01-foundations/week-01-networking/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 002**](days/day-002/README.md) | IPv4, IPv6, CIDR Subnetting & Packet Fragmentation | `[LIGHT]` | [W01](phase-01-foundations/week-01-networking/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 003**](days/day-003/README.md) | Core Protocols — ARP, ICMP, DHCP, NAT & Routing Mechanics | `[LIGHT]` | [W01](phase-01-foundations/week-01-networking/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 004**](days/day-004/README.md) | Transport & Application Layers — DNS, HTTP/HTTPS & TLS Cryptography | `[LIGHT]` | [W01](phase-01-foundations/week-01-networking/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 005**](days/day-005/README.md) | Network Traffic Analysis — tcpdump & Wireshark Stream Reconstruction | `[FULL]` | [W01](phase-01-foundations/week-01-networking/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 006**](days/day-006/README.md) | Linux Filesystem Hierarchy (FHS), Users & Standard Permissions | `[LIGHT]` | [W02](phase-01-foundations/week-02-linux/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 007**](days/day-007/README.md) | Special Permissions (SUID, SGID, Sticky Bit) & Process Execution | `[LIGHT]` | [W02](phase-01-foundations/week-02-linux/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 008**](days/day-008/README.md) | Systemd Services, Daemons, Cron Tasks & SSH Key Hardening | `[LIGHT]` | [W02](phase-01-foundations/week-02-linux/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 009**](days/day-009/README.md) | Virtual Filesystems (/proc, /sys), Environment Variables & Bash Automation | `[FULL]` | [W02](phase-01-foundations/week-02-linux/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 010**](days/day-010/README.md) | Linux Logging (/var/log, journalctl), Networking & Host Investigation | `[FULL]` | [W02](phase-01-foundations/week-02-linux/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 011**](days/day-011/README.md) | Windows OS Architecture — User Mode, Kernel Mode & PE Basics | `[LIGHT]` | [W03](phase-01-foundations/week-03-windows/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 012**](days/day-012/README.md) | Windows Security Subsystem — LSASS, SAM, Tokens & ACLs | `[LIGHT]` | [W03](phase-01-foundations/week-03-windows/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 013**](days/day-013/README.md) | Windows Services, Registry Architecture, Scheduled Tasks & UAC | `[LIGHT]` | [W03](phase-01-foundations/week-03-windows/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 014**](days/day-014/README.md) | PowerShell for Security Operations — WMI, CIM & WinRM | `[FULL]` | [W03](phase-01-foundations/week-03-windows/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 015**](days/day-015/README.md) | Windows Auditing — Security Event Logs, Sysmon & Endpoint Visibility | `[FULL]` | [W03](phase-01-foundations/week-03-windows/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 016**](days/day-016/README.md) | HTTP Protocol Deep Dive, Headers, Cookies & Sessions | `[LIGHT]` | [W04](phase-01-foundations/week-04-web-architecture/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 017**](days/day-017/README.md) | Browser Security Model — Same-Origin Policy (SOP), CORS & CSP | `[LIGHT]` | [W04](phase-01-foundations/week-04-web-architecture/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 018**](days/day-018/README.md) | Authentication Architectures — Passwords, Sessions & JSON Web Tokens (JWT) | `[LIGHT]` | [W04](phase-01-foundations/week-04-web-architecture/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 019**](days/day-019/README.md) | Modern Federated Identity — OAuth 2.0 & OpenID Connect (OIDC) | `[FULL]` | [W04](phase-01-foundations/week-04-web-architecture/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 020**](days/day-020/README.md) | Web Infrastructure — Reverse Proxies, CDNs, WebSockets & APIs | `[FULL]` | [W04](phase-01-foundations/week-04-web-architecture/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 021**](days/day-021/README.md) | API Architectures, RESTful Conventions & GraphQL Introspection | `[LIGHT]` | [W05](phase-01-foundations/week-05-web-security/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 022**](days/day-022/README.md) | Cross-Site Scripting (XSS) Core Mechanics — Stored, Reflected & DOM | `[LIGHT]` | [W05](phase-01-foundations/week-05-web-security/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 023**](days/day-023/README.md) | Cross-Site Request Forgery (CSRF) & SameSite Cookie Defenses | `[LIGHT]` | [W05](phase-01-foundations/week-05-web-security/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 024**](days/day-024/README.md) | Server-Side Request Forgery (SSRF) Mechanics & Cloud Metadata | `[FULL]` | [W05](phase-01-foundations/week-05-web-security/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 025**](days/day-025/README.md) | SQL Injection Fundamentals — Error-based, Union-based & Blind | `[FULL]` | [W05](phase-01-foundations/week-05-web-security/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 026**](days/day-026/README.md) | Security Workstation Setup — Kali Linux, Shell Customization & Git OPSEC | `[LIGHT]` | [W06](phase-01-foundations/week-06-tooling/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 027**](days/day-027/README.md) | Network Scanning & Port Enumeration with Nmap | `[FULL]` | [W06](phase-01-foundations/week-06-tooling/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 028**](days/day-028/README.md) | Web Application Interception with Burp Suite | `[FULL]` | [W06](phase-01-foundations/week-06-tooling/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 029**](days/day-029/README.md) | Python for Security Practitioners — Sockets, Requests & Automation | `[FULL]` | [W06](phase-01-foundations/week-06-tooling/README.md) | [P01](phase-01-foundations/README.md) |
+| 🟢 Completed | [**Day 030**](days/day-030/README.md) | Phase 1 Capstone Deliverable — Security Lab Environment | `[FULL]` | [W06](phase-01-foundations/week-06-tooling/README.md) | [P01](phase-01-foundations/README.md) |
 | ⚪ Not Started | [**Day 031**](days/day-031/README.md) | Open Source Intelligence (OSINT) — Domain WHOIS, ASN Mapping & IP Scopes | `[LIGHT]` | [W07](phase-02-web-recon/week-07-recon-osint/README.md) | [P02](phase-02-web-recon/README.md) |
 | ⚪ Not Started | [**Day 032**](days/day-032/README.md) | Subdomain Enumeration — Passive (crt.sh, CT Logs) & Active Discovery | `[LIGHT]` | [W07](phase-02-web-recon/week-07-recon-osint/README.md) | [P02](phase-02-web-recon/README.md) |
 | ⚪ Not Started | [**Day 033**](days/day-033/README.md) | DNS Enumeration & Subdomain Takeover Analysis | `[LIGHT]` | [W07](phase-02-web-recon/week-07-recon-osint/README.md) | [P02](phase-02-web-recon/README.md) |

@@ -1,8 +1,8 @@
 # WEEK 02 — Linux Fundamentals & System Administration
 
 > **Phase:** [Phase 01 — Core Foundations — Networking + Linux + Windows + Web](../README.md)  
-> **Status:** ⚪ Not Started
-> **Progress:** `░░░░░░░░░░░░░░░░░░░░` 0% (0 / 5 Days Completed)  
+> **Status:** 🟢 Completed
+> **Progress:** `████████████████████` 100% (5 / 5 Days Completed)  
 > **Curriculum Tiers:** 3 Light (Theory & Reading) • 2 Full (Hands-on Lab & Deliverable)
 
 ---
@@ -11,11 +11,11 @@
 Master Linux filesystem hierarchy, permission models, systemd services, process namespaces, and host investigation.
 
 ## 📅 Schedule of Days
-- [ ] [⚪ Day 006: Linux Filesystem Hierarchy (FHS), Users & Standard Permissions](../../days/day-006/README.md) `[LIGHT]`
-- [ ] [⚪ Day 007: Special Permissions (SUID, SGID, Sticky Bit) & Process Execution](../../days/day-007/README.md) `[LIGHT]`
-- [ ] [⚪ Day 008: Systemd Services, Daemons, Cron Tasks & SSH Key Hardening](../../days/day-008/README.md) `[LIGHT]`
-- [ ] [⚪ Day 009: Virtual Filesystems (/proc, /sys), Environment Variables & Bash Automation](../../days/day-009/README.md) `[FULL]`
-- [ ] [⚪ Day 010: Linux Logging (/var/log, journalctl), Networking & Host Investigation](../../days/day-010/README.md) `[FULL]`
+- [x] [🟢 Day 006: Linux Filesystem Hierarchy (FHS), Users & Standard Permissions](../../days/day-006/README.md) `[LIGHT]`
+- [x] [🟢 Day 007: Special Permissions (SUID, SGID, Sticky Bit) & Process Execution](../../days/day-007/README.md) `[LIGHT]`
+- [x] [🟢 Day 008: Systemd Services, Daemons, Cron Tasks & SSH Key Hardening](../../days/day-008/README.md) `[LIGHT]`
+- [x] [🟢 Day 009: Virtual Filesystems (/proc, /sys), Environment Variables & Bash Automation](../../days/day-009/README.md) `[FULL]`
+- [x] [🟢 Day 010: Linux Logging (/var/log, journalctl), Networking & Host Investigation](../../days/day-010/README.md) `[FULL]`
 
 ---
 

@@ -1,8 +1,8 @@
 # WEEK 04 — Web Architecture & Core Protocols
 
 > **Phase:** [Phase 01 — Core Foundations — Networking + Linux + Windows + Web](../README.md)  
-> **Status:** ⚪ Not Started
-> **Progress:** `░░░░░░░░░░░░░░░░░░░░` 0% (0 / 5 Days Completed)  
+> **Status:** 🟢 Completed
+> **Progress:** `████████████████████` 100% (5 / 5 Days Completed)  
 > **Curriculum Tiers:** 3 Light (Theory & Reading) • 2 Full (Hands-on Lab & Deliverable)
 
 ---
@@ -11,11 +11,11 @@
 Master HTTP request/response mechanics, browser security policies, session handling, OAuth/OIDC, and modern web infrastructure.
 
 ## 📅 Schedule of Days
-- [ ] [⚪ Day 016: HTTP Protocol Deep Dive, Headers, Cookies & Sessions](../../days/day-016/README.md) `[LIGHT]`
-- [ ] [⚪ Day 017: Browser Security Model — Same-Origin Policy (SOP), CORS & CSP](../../days/day-017/README.md) `[LIGHT]`
-- [ ] [⚪ Day 018: Authentication Architectures — Passwords, Sessions & JSON Web Tokens (JWT)](../../days/day-018/README.md) `[LIGHT]`
-- [ ] [⚪ Day 019: Modern Federated Identity — OAuth 2.0 & OpenID Connect (OIDC)](../../days/day-019/README.md) `[FULL]`
-- [ ] [⚪ Day 020: Web Infrastructure — Reverse Proxies, CDNs, WebSockets & APIs](../../days/day-020/README.md) `[FULL]`
+- [x] [🟢 Day 016: HTTP Protocol Deep Dive, Headers, Cookies & Sessions](../../days/day-016/README.md) `[LIGHT]`
+- [x] [🟢 Day 017: Browser Security Model — Same-Origin Policy (SOP), CORS & CSP](../../days/day-017/README.md) `[LIGHT]`
+- [x] [🟢 Day 018: Authentication Architectures — Passwords, Sessions & JSON Web Tokens (JWT)](../../days/day-018/README.md) `[LIGHT]`
+- [x] [🟢 Day 019: Modern Federated Identity — OAuth 2.0 & OpenID Connect (OIDC)](../../days/day-019/README.md) `[FULL]`
+- [x] [🟢 Day 020: Web Infrastructure — Reverse Proxies, CDNs, WebSockets & APIs](../../days/day-020/README.md) `[FULL]`
 
 ---
 

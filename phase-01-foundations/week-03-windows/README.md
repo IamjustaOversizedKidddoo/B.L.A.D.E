@@ -1,8 +1,8 @@
 # WEEK 03 — Windows Internals & PowerShell Security
 
 > **Phase:** [Phase 01 — Core Foundations — Networking + Linux + Windows + Web](../README.md)  
-> **Status:** ⚪ Not Started
-> **Progress:** `░░░░░░░░░░░░░░░░░░░░` 0% (0 / 5 Days Completed)  
+> **Status:** 🟢 Completed
+> **Progress:** `████████████████████` 100% (5 / 5 Days Completed)  
 > **Curriculum Tiers:** 3 Light (Theory & Reading) • 2 Full (Hands-on Lab & Deliverable)
 
 ---
@@ -11,11 +11,11 @@
 Understand Windows security architecture, processes, tokens, registry, ACLs, and administrative management via PowerShell.
 
 ## 📅 Schedule of Days
-- [ ] [⚪ Day 011: Windows OS Architecture — User Mode, Kernel Mode & PE Basics](../../days/day-011/README.md) `[LIGHT]`
-- [ ] [⚪ Day 012: Windows Security Subsystem — LSASS, SAM, Tokens & ACLs](../../days/day-012/README.md) `[LIGHT]`
-- [ ] [⚪ Day 013: Windows Services, Registry Architecture, Scheduled Tasks & UAC](../../days/day-013/README.md) `[LIGHT]`
-- [ ] [⚪ Day 014: PowerShell for Security Operations — WMI, CIM & WinRM](../../days/day-014/README.md) `[FULL]`
-- [ ] [⚪ Day 015: Windows Auditing — Security Event Logs, Sysmon & Endpoint Visibility](../../days/day-015/README.md) `[FULL]`
+- [x] [🟢 Day 011: Windows OS Architecture — User Mode, Kernel Mode & PE Basics](../../days/day-011/README.md) `[LIGHT]`
+- [x] [🟢 Day 012: Windows Security Subsystem — LSASS, SAM, Tokens & ACLs](../../days/day-012/README.md) `[LIGHT]`
+- [x] [🟢 Day 013: Windows Services, Registry Architecture, Scheduled Tasks & UAC](../../days/day-013/README.md) `[LIGHT]`
+- [x] [🟢 Day 014: PowerShell for Security Operations — WMI, CIM & WinRM](../../days/day-014/README.md) `[FULL]`
+- [x] [🟢 Day 015: Windows Auditing — Security Event Logs, Sysmon & Endpoint Visibility](../../days/day-015/README.md) `[FULL]`
 
 ---
 

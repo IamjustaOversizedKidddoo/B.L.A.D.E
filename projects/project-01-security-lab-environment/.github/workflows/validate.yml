@@ -1,0 +1,120 @@
+name: Lab Structure Validation
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-structure:
+    name: Validate Repository Structure
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required files exist
+        run: |
+          echo "Checking required documentation files..."
+          required_files=(
+            "README.md"
+            "SECURITY.md"
+            "CONTRIBUTING.md"
+            "CHANGELOG.md"
+            ".gitignore"
+            "architecture/architecture.md"
+            "architecture/ip-address-plan.md"
+            "architecture/threat-model.md"
+            "architecture/network-diagram.md"
+            "docs/methodology.md"
+            "docs/tools.md"
+            "docs/roles.md"
+            "docs/mitre-mapping.md"
+            "docs/security-controls.md"
+            "docs/troubleshooting.md"
+            "scripts/validation/validate_lab.py"
+            "scripts/evidence/collect_evidence.py"
+          )
+          all_ok=true
+          for file in "${required_files[@]}"; do
+            if [ -f "$file" ]; then
+              echo "  ✅ $file"
+            else
+              echo "  ❌ MISSING: $file"
+              all_ok=false
+            fi
+          done
+          if [ "$all_ok" = false ]; then
+            echo "Some required files are missing!"
+            exit 1
+          fi
+          echo "All required files present."
+
+      - name: Check required directories exist
+        run: |
+          echo "Checking required directories..."
+          required_dirs=(
+            "architecture"
+            "setup"
+            "scripts/validation"
+            "scripts/evidence"
+            "detection/sigma"
+            "detection/wazuh"
+            "detection/suricata"
+            "attack-scenarios"
+            "vulnerability-assessments"
+            "incidents"
+            "reports"
+            "evidence"
+            "docs"
+          )
+          all_ok=true
+          for dir in "${required_dirs[@]}"; do
+            if [ -d "$dir" ]; then
+              echo "  ✅ $dir/"
+            else
+              echo "  ❌ MISSING: $dir/"
+              all_ok=false
+            fi
+          done
+          if [ "$all_ok" = false ]; then
+            echo "Some required directories are missing!"
+            exit 1
+          fi
+          echo "All required directories present."
+
+      - name: Check for accidentally committed secrets
+        run: |
+          echo "Scanning for potentially sensitive patterns..."
+          # Simple heuristic check — not a substitute for proper secret scanning
+          patterns=(
+            "password="
+            "passwd="
+            "secret="
+            "api_key="
+            "-----BEGIN RSA PRIVATE KEY-----"
+            "-----BEGIN OPENSSH PRIVATE KEY-----"
+          )
+          found=false
+          for pattern in "${patterns[@]}"; do
+            if grep -r --include="*.py" --include="*.sh" --include="*.yml" \
+               --include="*.yaml" --include="*.json" \
+               -l "$pattern" . 2>/dev/null | grep -v ".gitignore" | grep -v "CHANGELOG" | grep -v "SECURITY.md"; then
+              echo "⚠️  Pattern found: $pattern"
+              found=true
+            fi
+          done
+          if [ "$found" = true ]; then
+            echo "WARNING: Potentially sensitive patterns found. Review before pushing."
+            # Don't fail CI — warn only (lab documentation may reference these terms)
+          else
+            echo "No sensitive patterns detected."
+          fi
+
+      - name: Validate Python scripts syntax
+        run: |
+          echo "Validating Python script syntax..."
+          python3 -m py_compile scripts/validation/validate_lab.py && echo "  ✅ validate_lab.py"
+          python3 -m py_compile scripts/evidence/collect_evidence.py && echo "  ✅ collect_evidence.py"
